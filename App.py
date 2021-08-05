@@ -3,14 +3,12 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_mysqldb import MySQL
 import pandas as pd
 import matplotlib.pyplot as plt
-from werkzeug.utils import send_file
 from sklearn.cluster import KMeans
 import numpy as np
-import pdfkit
-from jinja2 import Environment, FileSystemLoader
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import inch, cm
 from datetime import datetime
+
 
 # initializations
 app = Flask(__name__)
